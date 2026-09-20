@@ -6,12 +6,12 @@ Meowfetch is a simple and lightweight system information tool written in Rust. I
 
 To install Meowfetch, simply clone the repository and build it using Cargo:
 ```bash
-git clone https://github.com/Snape-max/meowfetch.git
+git clone https://github.com/PengweeWang/meowfetch.git
 cd meowfetch
 cargo install --path .
 ```
 
-Alternatively, you can download a pre-compiled binary from the [releases page](https://github.com/Snape-max/meowfetch/releases).
+Alternatively, you can download a pre-compiled binary from the [releases page](https://github.com/PengweeWang/meowfetch/releases).
 
 ## Usage
 
@@ -21,7 +21,13 @@ Here is an example output of Meowfetch:
 ![meowfetch](./asset/display1.png)
 
 
-You can also use the `-t` flag to display another type of cat logo.
+You can also use the `-t` flag to display another type of cat logo (1-3, default: 3).
+
+```bash
+meowfetch -t 1
+meowfetch --logo /path/to/custom_logo.txt
+meowfetch --no-color
+```
 
 ![meowfetch](./asset/display2.png)
 
@@ -30,7 +36,7 @@ You can also use the `-t` flag to display another type of cat logo.
 
 ## Customization
 
-You can customize the Logo of Meowfetch by modifying the `.meowrc` file at `$HOME/.config/.meowrc`, by [this tool](https://github.com/Snape-max/terminal_art_creator).
+You can customize the Logo of Meowfetch by modifying the `.meowrc` file at `$HOME/.config/.meowrc`, by [this tool](https://github.com/PengweeWang/terminal_art_creator).
 
 
 Just draw the logo on the website and touch the export button to copy the string and then paste it to the `.meowrc` file. 
@@ -48,6 +54,6 @@ Contributions are welcome! If you find a bug or have a feature request, please o
 
 ## License
 
-Meowfetch is licensed under the MIT License. See the [LICENSE](https://github.com/Snape-max/meowfetch/blob/main/LICENSE) file for more information.
+Meowfetch is licensed under the MIT License. See the [LICENSE](./LICENSE) file for more information.
 
 
